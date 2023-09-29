@@ -1,4 +1,4 @@
-FROM balenalib/%%BALENA_MACHINE_NAME%%-alpine-python
+FROM python:alpine
 
 RUN mkdir /app && echo "Balena is working" > /app/index.html
 
