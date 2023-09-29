@@ -1,0 +1,26 @@
+name: demo-app
+type: sw.application
+description: >-
+  My demo app for the workshop
+assets:
+  repository:
+    type: blob.asset
+    data:
+      url: ''
+  logo:
+    type: blob.asset
+    data:
+      url: ''        
+data:
+  applicationEnvironmentVariables:
+    - CLAUDE_FUN: "ALWAYS"
+  applicationConfigVariables:
+    - BALENA_HOST_CONFIG_gpu_mem: 256
+  defaultDeviceType: raspberry-pi
+  supportedDeviceTypes:
+    - raspberry-pi
+    - raspberry-pi2
+    - raspberrypi3
+    - raspberrypi4-64
+    - fincm3
+version: 1.1.2
